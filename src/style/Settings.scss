@@ -1,0 +1,49 @@
+.settings {
+.cardContainer {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: space-around;
+    padding: 0;
+    top: 100px;
+
+    .MuiPaper-root {
+        color: #ffffff;
+        background-color: #0A1419;
+        position: relative;
+    }
+    /* Tablet (portrait) ----------- */
+    @media only screen and (max-device-width : 1024px) {
+        flex-wrap: wrap;
+    }
+}
+
+.card {
+
+    .formInput {
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+    }
+
+    .MuiInputBase-root, .MuiInputLabel-root {
+        color:rgb(129, 126, 126);
+    }
+    
+    .MuiFilledInput-underline:before, .MuiFilledInput-underline:hover {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.42);
+    }
+    .MuiFilledInput-underline:hover {
+        border-bottom: 1px solid #3f51b5;
+    }
+}
+
+.actionButton {
+    flex-grow: 1;
+}
+
+.icon { 
+    border: 1px solid green;
+    cursor: pointer;
+}
+}
